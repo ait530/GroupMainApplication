@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- LINK TO FIREBASE GOES HERE -->
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 </head>
 
 <body>
@@ -92,11 +91,11 @@
 
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyCanlYIc7n-Wel8wDeaMxMzYtViVVCOwpI",
-      authDomain: "recent-user-with-push.firebaseapp.com",
-      databaseURL: "https://recent-user-with-push.firebaseio.com",
-      storageBucket: "recent-user-with-push.appspot.com",
-      messagingSenderId: "208476116054"
+      apiKey: "AIzaSyDuGU6jnBjNl92Q7fVFPdELnASYCs1DA_c",
+      authDomain: "push-phase.firebaseapp.com",
+      databaseURL: "https://push-phase.firebaseio.com",
+      storageBucket: "push-phase.appspot.com",
+      messagingSenderId: "412902006201"
     };
 
     firebase.initializeApp(config);
@@ -105,20 +104,20 @@
     var database = firebase.database();
 
     // Initial Values
-    var name = "";
-    var email = "";
-    var age = 0;
-    var comment = "";
+    var name = "aaron";
+    var email = "j@gmail.com";
+    var age = 54;
+    var comment = "hi";
 
     // Capture Button Click
     $("#add-user").on("click", function(event) {
       event.preventDefault();
 
       // Grabbed values from text boxes
-      name = $("#name-input").val().trim();
-      email = $("#email-input").val().trim();
-      age = $("#age-input").val().trim();
-      comment = $("#comment-input").val().trim();
+      // name = $("#name-input").val().trim();
+      // email = $("#email-input").val().trim();
+      // age = $("#age-input").val().trim();
+      // comment = $("#comment-input").val().trim();
 
       // Code for handling the push
       database.ref().push({
