@@ -3,10 +3,10 @@
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyDuGU6jnBjNl92Q7fVFPdELnASYCs1DA_c",
-     authDomain: "push-phase.firebaseapp.com",
-     databaseURL: "https://push-phase.firebaseio.com",
-     storageBucket: "push-phase.appspot.com",
-     messagingSenderId: "412902006201"
+      authDomain: "push-phase.firebaseapp.com",
+      databaseURL: "https://push-phase.firebaseio.com",
+      storageBucket: "push-phase.appspot.com",
+      messagingSenderId: "412902006201"
     };
 
     firebase.initializeApp(config);
